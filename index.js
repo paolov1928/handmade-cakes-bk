@@ -36,7 +36,7 @@ app.post("/cakes", (req, res) => {
 
   var mailOptions = {
     from: data.email,
-    to: process.env.EMAIL_USER + "@gmail.com",
+    to: process.env.RECIPIENT_EMAIL + "@gmail.com",
     subject: "New cake alert",
     html: `<p>name: ${data.name}</p>
           <p>email: ${data.email}</p>
